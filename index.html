@@ -59,6 +59,7 @@
                     height="231px"
                     width="231px"
                     title="1"
+                    onclick="play()"
             /></a>
             <a href="#2"
                 ><img
@@ -68,6 +69,7 @@
                     height="231px"
                     width="231px"
                     title="2"
+                    onclick="play()"
             /></a>
             <a href="#3"
                 ><img
@@ -77,6 +79,7 @@
                     height="231px"
                     width="231px"
                     title="3"
+                    onclick="play()"
             /></a>
             <a href="#4"
                 ><img
@@ -86,6 +89,7 @@
                     height="231px"
                     width="231px"
                     title="4"
+                    onclick="play()"
             /></a>
             <a href="#5"
                 ><img
@@ -95,6 +99,7 @@
                     height="231px"
                     width="231px"
                     title="5"
+                    onclick="play()"
             /></a>
             <a href="#6"
                 ><img
@@ -104,6 +109,7 @@
                     height="231px"
                     width="231px"
                     title="6"
+                    onclick="play()"
             /></a>
             <a href="#7"
                 ><img
@@ -113,6 +119,7 @@
                     height="231px"
                     width="231px"
                     title="7"
+                    onclick="play()"
             /></a>
             <a href="#8"
                 ><img
@@ -122,6 +129,7 @@
                     height="231px"
                     width="231px"
                     title="8"
+                    onclick="play()"
             /></a>
             <a href="#9"
                 ><img
@@ -131,6 +139,7 @@
                     height="231px"
                     width="231px"
                     title="9"
+                    onclick="play()"
             /></a>
             <a href="#10"
                 ><img
@@ -139,7 +148,8 @@
                     alt="pageant.jpg"
                     height="231px"
                     width="231px"
-                    title="10" /></a
+                    title="10"
+                    onclick="play()" /></a
             ><br />
             <a href="#sources" style="color: aliceblue"
                 >sources for information</a
@@ -149,13 +159,13 @@
             <br />
 
             <p>
-                Scout, a young girl, shares her family's background with us. Her
-                father, Atticus Finch, is a lawyer based in Maycomb. After their
-                mother's passing, Scout and her brother Jem are brought up by
-                Calpurnia. The two siblings make friends with a boy called Dill,
-                who proposes a plan to entice Boo Radley, a secluded neighbor,
-                out of his home. Scout witnesses a shutter move, as if someone
-                were glancing out, when Dill persuades Jem to dash over and
+                Scout, a young girl, shares her family's background with us. Her<br>
+                father, Atticus Finch, is a lawyer based in Maycomb. After their<br>
+                mother's passing, Scout and her brother Jem are brought up by<br>
+                Calpurnia. The two siblings make friends with a boy called Dill,<br>
+                who proposes a plan to entice Boo Radley, a secluded neighbor,<br>
+                out of his home. Scout witnesses a shutter move, as if someone<br>
+                were glancing out, when Dill persuades Jem to dash over and<br>
                 touch Boo's house.
             </p>
             <br /><br /><a href="#main"
@@ -165,6 +175,7 @@
                     alt="BACK"
                     height="40px;"
                     width="100px;"
+                    onclick="play()"
             /></a>
         </div>
         <div id="2">
@@ -191,6 +202,7 @@
                     alt="BACK"
                     height="40px;"
                     width="100px;"
+                    onclick="play()"
             /></a>
         </div>
         <div id="3">
@@ -219,6 +231,7 @@
                     alt="BACK"
                     height="40px;"
                     width="100px;"
+                    onclick="play()"
             /></a>
         </div>
         <div id="4">
@@ -248,6 +261,7 @@
                     alt="BACK"
                     height="40px;"
                     width="100px;"
+                    onclick="play()"
             /></a>
         </div>
         <div id="5">
@@ -281,6 +295,7 @@
                     alt="BACK"
                     height="40px;"
                     width="100px;"
+                    onclick="play()"
             /></a>
         </div>
         <div id="6">
@@ -308,6 +323,7 @@
                     alt="BACK"
                     height="40px;"
                     width="100px;"
+                    onclick="play()"
             /></a>
         </div>
         <div id="7">
@@ -337,6 +353,7 @@
                     alt="BACK"
                     height="40px;"
                     width="100px;"
+                    onclick="play()"
             /></a>
         </div>
         <div id="8">
@@ -364,6 +381,7 @@
                     alt="BACK"
                     height="40px;"
                     width="100px;"
+                    onclick="play()"
             /></a>
         </div>
         <div id="9">
@@ -385,6 +403,7 @@
                     alt="BACK"
                     height="40px;"
                     width="100px;"
+                    onclick="play()"
             /></a>
         </div>
         <div id="10">
@@ -413,6 +432,7 @@
                     alt="BACK"
                     height="40px;"
                     width="100px;"
+                    onclick="play()"
             /></a>
         </div>
         <div id="sources">
@@ -428,6 +448,14 @@
                     width="1000px;"
             /></a>
         </div>
-        <script></script>
+
+        <audio id="audio" src="click.wav"></audio>
+
+        <script>
+            function play() {
+                var audio = document.getElementById("audio");
+                audio.play();
+            }
+        </script>
     </body>
 </html>
